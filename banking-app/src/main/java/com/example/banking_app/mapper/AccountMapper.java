@@ -6,7 +6,7 @@ import com.example.banking_app.entity.Account;
 public class AccountMapper {
     public static Account mapToAccount(AccountDto accountDto){
         Account account = new Account(
-                accountDto.getId(), accountDto.getAccountName(), accountDto.getBalance()
+                accountDto.id(), accountDto.accountName(), accountDto.balance()
         );
         return account;
     }
